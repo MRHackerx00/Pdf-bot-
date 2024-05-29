@@ -6,7 +6,7 @@ import os
 bot = telebot.TeleBot("7127683041:AAHki1ezesTJzqnDLRDCQXX-xFD_avrSRpY")
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
- bot.send_message(message.chat.id,"""
+ bot.reply_to(message, "I'm sorry, I don't      und   erstand that command.")(message.chat.id,"""
 hi, this bot send learning PDF
 
 use:
@@ -30,6 +30,6 @@ def handle_user_input(message):
                text = f"* this is pdf download  link :-*  [link]({j})"
                bot.send_message(message.chat.id, text, parse_mode="Markdown")
     else:
-        bot.reply_to(message, "I'm sorry, I don't und	erstand that command.")
+        bot.reply_to(message, "I'm sorry, I don't understand that command.")
 
 bot.infinity_polling()
