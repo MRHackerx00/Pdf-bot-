@@ -6,7 +6,7 @@ import os
 bot = telebot.TeleBot("7127683041:AAHki1ezesTJzqnDLRDCQXX-xFD_avrSRpY")
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
- bot.reply_to(message.chat.id,"""
+ bot.reply_to(message,"""
 hi, this bot send learning PDF
 
 use:
@@ -15,7 +15,7 @@ search: <you topis>
 ``
 🗒️🚨 note: use small charter use search:
 
-*owner : @MR_Hacker_000*""", parse_mode="Markdown")
+*owner : @MR_Hacker_000*""")
 
 @bot.message_handler(func=lambda message: True)
 def handle_user_input(message):
