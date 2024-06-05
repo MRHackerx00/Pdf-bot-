@@ -60,7 +60,7 @@ def handle_user_input(message):
           last_name = message.from_user.last_name
           username = message.from_user.username
           file =f"pdfcreation date :_   {reader.metadata.creation_date} "
-          bot.send_document(message.chat.id, j, caption=file)
+          bot.send_document(message.chat.id, j, caption=sech)
           try:
              
             bot.send_message(channel_id, f"""
