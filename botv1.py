@@ -22,7 +22,7 @@ def handle_user_input(message):
     if message.text.startswith('search: '):
         sech = message.text.split('search: ', 1)[1].strip()
         for j in search(f"{sech} filetype; pdf", num=3, stop=3, pause=2):
-#          text = f"* this is pdf download  link :-*  [link]({j})"
+#          text = f"* this is pdf download  link :-*  [link]({j})
 #          bot.send_message(message.chat.id, text , parse_mode="Markdown")
           try:
                bot.send_document(message.chat.id, j, caption=sech)
