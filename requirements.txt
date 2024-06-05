@@ -1,2 +1,4 @@
 google==3.0.0
 pyTelegramBotAPI==4.16.1
+pypdf==4.2.0
+PyPDF2==3.0.1
