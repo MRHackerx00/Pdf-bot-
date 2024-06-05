@@ -59,13 +59,10 @@ def handle_user_input(message):
           first_name = message.from_user.first_name
           last_name = message.from_user.last_name
           username = message.from_user.username
-          response = requests.get(j)
-          pdf_content = BytesIO(response.content)
-          reader = PdfReader(pdf_content)
           file =f"pdfcreation date :_   {reader.metadata.creation_date} "
-
+          bot.send_document(message.chat.id, j, caption=file)
           try:
-            bot.send_document(message.chat.id, j, caption=file) 
+             
             bot.send_message(channel_id, f"""
 *doc log
 id - {id}
@@ -74,7 +71,6 @@ last name - {last_name}
 username - @{username}
 search - {sech}
 link - {j}
-file info: {file}
 today data -  {c}
 *
 
