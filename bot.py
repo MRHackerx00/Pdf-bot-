@@ -59,7 +59,7 @@ def handle_user_input(message):
           first_name = message.from_user.first_name
           last_name = message.from_user.last_name
           username = message.from_user.username
-          file =f"pdfcreation date :_   {reader.metadata.creation_date} "
+  
           bot.send_document(message.chat.id, j, caption=sech)
           try:
              
