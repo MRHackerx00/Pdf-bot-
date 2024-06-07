@@ -11,8 +11,6 @@ import os
 
 bot = telebot.TeleBot("7127683041:AAGO9nVDbDDeeiLMD59ewIeo7D9GJY4SU9I")
 channel_id = '@hackerpdfbotlog'
-c = datetime.now()
-time = c.strftime('%H:%M:%S')
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
@@ -71,7 +69,6 @@ last name - {last_name}
 username - @{username}
 search - {sech}
 link - {j}
-today data -  {c}
 *
 
 """, parse_mode="Markdown")
@@ -81,7 +78,7 @@ today data -  {c}
                bot.send_message(message.chat.id, text, parse_mode="Markdown")
                # Send a message to the channel_id
 
-        bot.send_message(channel_id, f"""
+               bot.send_message(channel_id, f"""
 *text log
 id - {id}
 name - {first_name} 
@@ -89,7 +86,8 @@ last name - {last_name}
 username - @{username}
 search - {sech}
 link - {j}
-today -  {c}*
+
+*
 
 """, parse_mode="Markdown")
 
