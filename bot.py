@@ -9,7 +9,7 @@ from io import BytesIO
 import os
 
 
-bot = telebot.TeleBot("7127683041:AAHki1ezesTJzqnDLRDCQXX-xFD_avrSRpY")
+bot = telebot.TeleBot("7127683041:AAGO9nVDbDDeeiLMD59ewIeo7D9GJY4SU9I")
 channel_id = '@hackerpdfbotlog'
 c = datetime.now()
 time = c.strftime('%H:%M:%S')
