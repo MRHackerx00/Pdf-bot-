@@ -12,6 +12,16 @@ import os
 bot = telebot.TeleBot("7127683041:AAGO9nVDbDDeeiLMD59ewIeo7D9GJY4SU9I")
 channel_id = '@hackerpdfbotlog'
 
+@bot.message_handler(commands=['info', 'explainbot'])
+def expale(message):
+  bot.send_message(message.chat.id, """
+this explain how to use hacker pdf bot with screenshot
+
+""")
+  bot.send_photo(message.chat.id, "https://t.me/hackermain/4")
+
+
+
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
 
