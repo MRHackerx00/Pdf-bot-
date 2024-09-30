@@ -67,7 +67,7 @@ def handle_user_input(message):
     if message.text:
         global sech, j
         sech = message.text
-        for j in search(f"{sech} filetype; pdf", num=3, stop=3, pause=2):
+        for j in search(f"{sech} filetype; pdf", num=10, stop=10, pause=10):
 
 
           global username, last_name, first_name, id
@@ -116,5 +116,5 @@ link - {j}
         bot.reply_to(message, "I'm sorry")
 
 
-broadcast_message("HACKER BOT IS BACK ONLINE")
+broadcast_message("HACKER BOT IS BACK ONLINE /start")
 bot.infinity_polling()    
