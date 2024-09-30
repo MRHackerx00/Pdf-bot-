@@ -116,5 +116,5 @@ link - {j}
         bot.reply_to(message, "I'm sorry")
 
 
-#broadcast_message("bot is testing now ")
+broadcast_message("HACKER BOT IS BACK ONLINE")
 bot.infinity_polling()    
